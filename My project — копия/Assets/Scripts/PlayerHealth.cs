@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100; // Максимальное здоровье
-    public int currentHealth; // Текущее здоровье
+    public int maxHealth = 100; 
+    public int currentHealth; 
 
     private void Start()
     {
-        // Инициализация текущего здоровья
+        Л™
         currentHealth = maxHealth;
     }
 
-    // Метод для получения урона
+    
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("Текущее здоровье: " + currentHealth); // Для отладки
-        Debug.Log("Бочка взорвалась! Урон: 20");
-        Debug.Log("Текущее здоровье игрока: " + currentHealth);
+        Debug.Log("Е‡ДєД™ГіЕЇДєДє Г§Г¤Г®Д‘Г®ГўГјДє: " + currentHealth); 
+        Debug.Log("ГЃГ®Г·Д™Е• ГўГ§Г®Д‘ГўЕ•Г«Е•Е„Гј! Г“Д‘Г®Г­: 20");
+        Debug.Log("Е‡ДєД™ГіЕЇДєДє Г§Г¤Г®Д‘Г®ГўГјДє ДЌДѓД‘Г®Д™Е•: " + currentHealth);
 
 
         if (currentHealth <= 0)
@@ -26,11 +26,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    // Метод смерти игрока
+    
     private void Die()
     {
-        Debug.Log("Игрок мертв!");
-        // Логика смерти, например, уничтожение игрока
+        Debug.Log("ДЊДѓД‘Г®Д™ Д›ДєД‘Е€Гў!");
+        
         Destroy(gameObject);
     }
 }
